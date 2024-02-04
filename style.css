@@ -321,7 +321,7 @@ li a:hover:after {
   background-color: rgba(209, 209, 209, 0.466);
   backdrop-filter: blur(4px);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and ((min-width: 425px) and (max-width: 783px)) {
   .navbar {
     margin-left: 5%;
     margin-right: 5%;
@@ -337,5 +337,86 @@ li a:hover:after {
   }
   .content{
     margin-right: 5%;
+  }
+}
+@media only screen and ((min-width: 375px) and (max-width: 760px)) {
+  .navbar {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .navbar ul {
+    margin-top: 20px;
+  }
+  .header {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .content{
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .gamesContent{
+    flex-direction: column;
+  }
+  .game1,
+  .game2,
+  .game3 {
+    width: 200px;
+    height: 200px;
+  }
+  .games{
+    height: auto;
+  }
+  .signup-form{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media only screen and ((min-width: 320px) and (max-width: 375px)) {
+  .header h1{
+    font-size: 29px;
+  }
+  .signup-form p{
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .navbar {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .navbar ul {
+    margin-top: 20px;
+  }
+  .content{
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .header{
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .header h1{
+    font-size: 25px;
+  }
+  .gamesContent{
+    flex-direction: column;
+  }
+  .games{
+    height: auto;
+  }
+  .signup-form{
+    width: 100%;
+    margin-left: 0;
+    padding-right:1px ;
+  }
+  .signup-form p{
+    font-size: 13px;
   }
 }
